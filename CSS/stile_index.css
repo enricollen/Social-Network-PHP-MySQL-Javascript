@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+@font-face{
+  font-family: 'coffee';
+    src: url(Font/coffee.eot);
+    font-style: normal;
+}
+
+nav{
+    width: 100%;
+    height: 4em;
+    background: rgba(39, 18, 7, 0.91); /* NB!: per trasparenza #0005! altra combinazione accettata #000 e opacity: 0.9 */
+    line-height: 4em;
+    position: fixed; 
+}
+
+nav ul{
+    float: right;
+    margin-right: 0em;
+}
+
+#logo{
+    float: left;
+    margin-left: 7vh;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.8s all;
+    cursor: pointer;
+}
+
+.list:hover{
+    background-color: #FFA500;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5.2vh;
+}
+
+.titoli_home{
+  display: none;
+}
+
+body{
+    background-color: #9dcfc4;
+}
+
+section{
+    width: 100%;
+    height: 150vh;
+}
+
+section.sezioniHome{
+    padding: 20vh;
+    box-sizing: border-box;
+    background-color: #9dcfc4;
+    height: auto;
+}
+
+/**************************************************************/
+
+/* IMMAGINE SEZIONE PRINCIPALE */
+#Banner_Principale{
+  height: 70vh;
+  width: 70vh;
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+}
+
+
+/* ALLINEAMENTO DESTRO TESTO SLOGAN INIZIALE */
+
+#slogan{
+    float: right;
+    text-align: right;
+    margin-top: 30vh;
+    font-family: 'coffee';
+    font-size: 37px;
+    line-height: 25px;
+    color: #280b07;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/**************************************************************/
+
+/* IMMAGINE SEZIONE CONNETTITI */
+
+#Connettiti_Immagine{
+  float: right;
+  height: 77vh;
+  width: 77vh;
+  margin-top: 20vh;
+}
+
+/* ALLINEAMENTO TESTO SEZIONE CONNETTITI */
+
+#Connettiti_Testo{
+  margin-top: 30vh;
+  color: #280b07;
+}
+
+/**************************************************************/
+
+/* IMMAGINE SEZIONE CONDIVIDI */
+
+#Condividi_Immagine{
+  float: left;
+  margin-left: 0vh;
+  height: 55vh;
+  width: 30vh;
+  margin-top: 10vh;
+}
+
+/* ALLINEAMENTO DESTRO TESTO SEZIONE CONDIVIDI */
+
+#Condividi_Testo{
+  float: right;
+  text-align: right;
+  margin-top: 7vh;
+  color: #280b07;
+}
+
+/**************************************************************/
+
+/* ALLINEAMENTO DESTRO TESTO SEZIONE COINVOLGI */
+
+#Coinvolgi_Testo{
+  margin-top: 30vh;
+  color: #280b07;
+}
+
+/* IMMAGINE SEZIONE COINVOLGI */
+
+#gif-coinvolgi{  
+  float: right;
+  height: 45vh;
+  width: 75vh;
+  margin-right: 10vh;
+  margin-top: 25vh;
+}
+
+/**************************************************************/
+
+/* IMMAGINE SEZIONE APP PAUSA CAFFE' */
+
+#mobile_app_immagine{
+  float: left;
+  margin-left: 0vh;
+  height: 65vh;
+  width: 85vh;
+  margin-top: 5vh;
+}
+
+/* ALLINEAMENTO TESTO SEZIONE NUOVA APP */
+
+#Mobile_App_Testo{
+  float: right;
+  text-align: right;
+  margin-top: 7vh;
+  color: #280b07;
+}
+
+/* IMMAGINE CODICE QR SEZIONE APP PAUSA CAFFE' */
+
+#qr_immagine{
+  float: right;
+  margin-right: 20vh;
+  height: 20vh;
+  width: 20vh;
+  margin-top: 5vh;
+}
+
+
+/**************************************************************/
+
+
+/************ STILI ERRORI REGISTRAZIONE ***************/
+
+/* stile classe di errori lato server */
+.errori_registrazione_php_stile{
+  color: red;
+  font-size: 0.8vw;
+  font-family:  Raleway, sans-serif ;
+  position: absolute;
+  left: 7vw;
+}
+
+/* stili per POSIZIONAMENTO dei singoli errori*/
+#emailErr{
+  top: 32vw;
+  left: 28.9vw;
+}
+
+#nomeErr{
+  top: 16.2vw;
+  left: 29.3vw;
+}
+
+#cognomeErr{
+  top: 21.5vw;
+  left: 31.3vw;
+}
+
+#usernameErr{
+  top: 37.2vw;
+  left: 31.5vw;
+}
+
+#pswErr{
+  top: 42.4vw;
+  left: 31.5vw;
+}
+
+#psw_repeatErr{
+  top: 47.7vw;
+  left: 37vw;
+}
+
+#cittaErr{
+  top: 26.8vw;
+  left: 28.5vw;
+}
+
+/* FINE stili per POSIZIONAMENTO dei singoli errori*/
+
+/***********ERRORE LOGIN PASSWORD O USER SBAGLIATO***********************/
+
+#errore_login_stile{
+  color: black;
+  font-weight: bold;
+  border: 0.0625em solid red;
+  background-color: #ff3333;
+  width: 62%;
+  padding: 0.1vw 1vw;
+  font-size: 1vw;
+  position: relative;
+  left: 15%;
+}
+
+/**************************STILE CLASSE PER ERRORI LATO CLIENT********************************/
+
+.class_err_registrazione_js_stile{
+  color: red;
+  font-size: 0.9vw;
+  display: none;
+}
+
+/************STILE RADIO BUTTON MODAL REGISTRAZIONE**********************/
+
+/* per new line tra sesso em radio button */
+label span {
+    display: block;
+}
+
+/************* STILE FOOTER *******************/
+
+#footer{
+	background: #38261d;
+	padding: 3vh;
+	font-size: small;
+	color: #d8ab82;
+	text-align: center;
+}
+
+/* sezione vuota tra sezione Nuova app e footer per fixare bug */
+.vuoto{
+  height: 30vh;
+  width: 100%;
+}

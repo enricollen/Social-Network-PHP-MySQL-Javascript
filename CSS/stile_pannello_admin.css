@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+  background-color: #f7e1cf;
+}
+
+nav{
+    width: 100%;
+    height: 4em;
+    background: rgba(39, 18, 7, 0.91); /* NB!: per trasparenza #0005! altra combinazione accettata #000 e opacity: 0.9 */
+    line-height: 4em;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav ul{
+    float: right;
+    margin-right: 0em;
+    z-index: 1000;
+}
+
+#logo{
+    float: left;
+    margin-left: 7vh;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.8s all;
+    z-index: 1000;
+}
+
+.list:hover{
+    background-color: #FFA500;
+    z-index: 1000;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5.13vh;
+    z-index: 1000;
+}
+
+section{
+    width: 100%;
+    min-height: 38em;  /* NB!: per sistemare, provare a switchare con height / min-height e vh invece di px */
+    background-color: #f7e1cf;
+}
+
+/* stile cerchietto notifica nuove segnalazioni */
+.dot {
+        border-radius: 30%;
+        width: 4.3vh;
+        height: 4vh;
+        padding: 0.5vh;
+        background: red;
+        border: 0.5vh solid #fff;
+        color: #666;
+        text-align: center;
+        font: 3.5vh Arial, sans-serif;
+      }
+
+
+/*** STILE CARTE ***/
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 0.34vh 0.34vh 20px black;
+     border-radius: 0.85vh; 
+     margin: 5%;
+     margin-top: 10%;
+     margin-left: 7%;
+    }
+
+.immagine img{
+  width: 100%;
+  height: 12em;
+  border-top-right-radius: 0.85vh;
+  border-top-left-radius: 0.85vh;
+ }
+
+.titolo{
+  text-align: center;
+  padding: 1.71vh;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.parte_bassa{
+  padding: 3px;
+  text-align: center;
+  padding-top: 1.71vh;
+  border-bottom-right-radius: 0.85vh;
+  border-bottom-left-radius: 0.85vh;
+}
+
+button{
+  margin-top: 40px;
+  margin-bottom: 1.71vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.85vh;
+  padding: 1.71vh;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.Bottoni_Pannello_Admin{
+ margin-top: 40px;
+  margin-bottom: 1.71vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.85vh;
+  padding: 1.71vh;
+  color: black;
+}
+
+.Bottoni_Pannello_Admin:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+/**** STILE PER TABELLA DELLE SEGNALAZIONI IN Segnalazioni.php ****/
+
+#tabella { 
+	width: 50em; 
+	border-collapse: collapse;
+ float: right;
+ margin-right: 20%;
+ margin-top: 10%;
+	}
+ 
+.segnalazioni_titolo{
+  display: none;
+}
+
+th { 
+	background: #301a08; 
+	color: white; 
+	font-weight: bold;
+ padding: 1.71vh; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 1.74vh;
+	}
+
+td { 
+	padding: 1.71vh; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 1.74vh;
+ background: #FFF; 
+	}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 1.71vh; 
+		white-space: nowrap;
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+/*** STILE IMMAGINE + SCRITTA + BOTTONE "nessuna segnalazione" in segnalazioni.php ***/
+#nessuna_segnalazione{
+ position: absolute;              
+   top: 25%;
+   right: 60%;
+}
+
+#nessuna_segnalazione_testo{
+ font-size: 2em;
+ position: absolute;               
+   top: 40%;
+   right: 20%;
+}
+
+#nessuna_segnalazione_bottone{
+ position: absolute;               
+   top: 50%;
+   right: 35%;
+   font-size: 2em;
+}
+
+#bottone_indietro{
+  float: left;
+font-size: 1em;
+margin-left: 60em;
+position: absolute;
+margin-top: 35em;
+}
+
+/****STILE BOTTONE ESEGUI IN PAGINA manutenzione.php ****/
+input {
+    background-color: #3d8917;
+    color: white;
+    padding: 2vh 2vh;
+    margin: 1vh 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+
+/*** STILE GRAFICO STATISTICHE IN analisi_statistiche.php ***/
+
+.skill {
+  width: 500px;
+  background-color: #fff;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 0px 20px #000;
+}
+
+.skill-container {
+  width: 500px;
+  height: 50px;
+  background-color: #ddd;
+  margin: 1.71vh 0px;
+  display: inline-block;
+  position: relative;
+}
+
+#contenitore2{
+ width: 500px;
+  background-color: #fff;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30em;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 0px 20px #000;
+}
+
+.skill-container p {
+  line-height: 50px;
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+}
+
+.skill-container p:nth-child(2) {
+  width: 5em;
+  padding-left: 1.71vh;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.skill-container p:nth-child(3) {
+  right: 1.71vh;
+  color:rgba(0, 0, 0, 0.5);
+}
+
+.skill-graph {
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+
+#section_analisi_dati{
+ height: 60em;
+}
+
+/*** STILE TITOLI PAGINA analisi_statistiche.php ***/
+
+#analisi_dati_titolo{
+ font-size: 3em;
+ float: left;
+ margin-left: 40%;
+ margin-top: 6%;
+}
+
+#titolo_diagramma_citta{
+ float: left;
+ position: absolute;
+ margin-left: 2em;
+ margin-top: 12em;
+}
+
+#titolo_diagramma_utenti{
+ float: left;
+ position: absolute;
+ margin-left: 2em;
+ margin-top: 29em;
+}
+
+
+/*** STILE PAGINA Manutenzione.php ***/
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.task-list{
+  width: 400px;
+  padding: 40px;
+  background: url("../immagini/db_maintenance.png") no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 20px #000;
+}
+.task-list h2{
+  color: #fff;
+  text-transform: uppercase;
+}
+.task{
+  display: flex;
+  padding: 1.71vh 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task input{
+  position: absolute;
+  visibility: hidden;
+}
+
+.task i{
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+  margin-right: 14px;
+  color: transparent;
+}
+
+.text{
+  font-size: 18px;
+  color: #fff;
+}
+
+.task input:checked ~ i{
+  color: green;
+}
+
+.task input:checked ~ .text{
+  color: green;
+}
+
+
+/**** STILE IMMAGINE PROVENIENZA UTENTI PAGINA analisi_statistiche.php ****/
+#immagine_provenienza_utenti{
+ float: right;
+height: 15em;
+width: 15em;
+margin-right: 62em;
+margin-top: 2em;
+}

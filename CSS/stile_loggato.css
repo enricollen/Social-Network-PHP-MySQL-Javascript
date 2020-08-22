@@ -1,0 +1,213 @@
+/**** FONT *****/
+@font-face { font-family: Delicious; src: url('../include/Font/coffee-Regular.otf'); }
+
+/***** DI SEGUITO LO STILE (navbar, sezioni) DELLE PAGINE (bacheca, membri, amici, richieste...) PER UTENTI LOGGATI ********/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 4em;
+    background: rgba(39, 18, 7, 0.91); /* NB!: per trasparenza #0005! altra combinazione accettata #000 e opacity: 0.9 */
+    line-height: 4em;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav ul{
+    float: right;
+    margin-right: 0em;
+    z-index: 1000;
+}
+
+#logo{
+    float: left;
+    margin-left: 7vh;
+}
+
+#icona_cerca_utente{
+  position: absolute;
+  margin-top: -1.5em;
+  margin-left: -2.5em;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.8s all;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.list:hover{
+    background-color: #FFA500;
+    z-index: 1000;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5.1vh;
+    z-index: 1000;
+}
+
+section{
+    width: 100%;
+    min-height: 102.73vh;  /* NB!: per sistemare, switchare con height / min-height e vh invece di px */
+}
+
+section.membri{
+    padding: 22.26vh;
+    box-sizing: border-box;
+    background-color: #f7e1cf;
+}
+
+section.membri h2{
+    font-size: 3em;
+    margin: 0;
+    padding: 0 0 3.42vh;
+    color: #000;
+}
+
+section.membri p{
+  font-size: 1.0em;
+    margin: 0;
+    padding: 3.42vh;
+    color: #000;
+}
+
+section.membri a{
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6.85vh;
+    color: #000;
+}
+
+/*** BOTTONI ****/
+button.pubblica {
+    background-color: #301a08;
+    color: white;
+    padding: 2vh 2vh;
+    margin: 1vh 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+input.BottoneRichiediAmicizia {
+    background-color: #3d8917;
+    color: white;
+    padding: 2vh 2vh;
+    margin: 1vh 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+
+button.aggiornadatiprofilo {
+    background-color: #3d8917;
+    color: white;
+    padding: 2.49vh 3.42vh;
+    margin: 1.37vh 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+
+input.BottoneRimuoviAmicizia {
+    background-color: #301a08;
+    color: white;
+    padding: 2vh 2vh;
+    margin: 1vh 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+
+input.BottoneAnnullaRichiesta {
+    background-color: #301a08;
+    color: white;
+    padding: 2vh 2vh;
+    margin: 1vh 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+
+input.AccettaRichiestaAmicizia {
+    background-color: #5ea995;
+    color: white;
+    padding: 2vh 2vh;
+    margin: 1vh 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+
+input.RifiutaRichiestaAmicizia {
+    background-color: #301a08;
+    color: white;
+    padding: 2vh 2vh;
+    margin: 1vh 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+}
+
+/************ STILE CERCHIETTO COLORATO NOTIFICHE ****************/
+
+.dot {
+  border-radius: 30%;
+  width: 4.3vh;
+  height: 4vh;
+  padding: 0.5vh;
+  background: red;
+  border: 0.5vh solid #fff;
+  color: #666;
+  text-align: center;
+  font: 3.5vh Arial, sans-serif;
+}
+
+
+/************ STILE SEARCH-BAR ****************/
+
+input[type=search] {
+    width: 7em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 1vh 1vh;
+}
+
+/************* STILE FOOTER *******************/
+
+#footer{
+	background: #38261d;
+    padding: 2.5vh;
+    font-size: small;
+    color: #d8ab82;
+    text-align: center;
+    margin-bottom: 0;
+    z-index: 3;
+}

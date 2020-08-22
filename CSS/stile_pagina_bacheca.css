@@ -1,0 +1,92 @@
+.form-text {
+		border:1px solid rgba(1,1,1,0.3);
+		width:80%;
+		padding:4px 7px;
+		margin-top:5px;
+		font-size:13px;
+		line-height:24px;
+		resize:none;
+		transition:ease 0.2s all;
+		outline:none !important;
+}
+
+.Banner{
+	width: 100%;
+    height: 65vh;
+    box-sizing: border-box;
+    background-image: url("../immagini/banner_bacheca3.jpg");
+    background-size: cover;
+	padding-top: 5em;
+}
+
+section.bacheca{
+    padding: 130px;
+    box-sizing: border-box;
+    background-color: #f7e1cf;
+    min-height: 800px;
+}
+
+.bottoni_bacheca{
+	width: 20%;
+	display: block;
+}
+
+textarea#statustext{
+	height:30vh;
+	border:#999 1px solid;
+	font-size:3vh;
+	width:100%;
+    border:2px solid #301a08;
+    border-radius:4px;
+    outline: none;
+    padding:8px;
+    transition:.3s;
+}
+
+ #statustext:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue; 
+}
+	
+div.status_boxes{
+	padding:2vh;
+	width: 100%;
+	line-height:1.5em;
+}
+
+div.status_boxes > div{
+	padding: 3vh;
+	border-radius: 25px;
+    border: 0.5vh solid #301a08;
+    padding: 4vh;
+    height: 20vh;
+	margin-top: 2vh;
+	background: #95d4c3;
+}
+
+div.status_boxes > div > b{
+	font-size:3vh;
+}
+
+textarea.replytext{
+	width:30%;
+	height:15vh;
+	padding:1%;
+	border:#999 1px solid;
+}
+
+div.reply_boxes{
+	padding:2vh;
+	border:#999 1px solid;
+	background:#F5F5F5;
+	width:40%;
+}
+
+div.reply_boxes > div > b{
+	font-size:2.2vh;
+	font-weight: bold;
+}
+
+.timestamp{
+	font-size: 12px;
+}

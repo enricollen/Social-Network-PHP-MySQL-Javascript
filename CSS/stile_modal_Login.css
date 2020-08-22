@@ -1,0 +1,135 @@
+/*************LOGIN MODAL****************/
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 2.05vh 3.42vh;
+    margin: 1.37vh 0;
+    display: inline-block;
+    border: 0.17vh solid #ccc;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn1 {
+    width: auto;
+    padding: 1.71vh 11.37vh;
+    background-color: #822222;
+}
+
+#BottoneEntra{
+  background-color: #301a08;
+}
+
+/* Center the image and position the close button */
+.imgcontainer1 {
+    text-align: center;
+    margin: 4.11vh 0 2.05vh 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 2.74vh;
+}
+
+span.psw {
+    float: right;
+    padding-top: 2.74vh;
+}
+
+/* The Modal (background) */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10.27vh;
+}
+
+/* Modal Content/Box */
+.modal-content1 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 0.17vh solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close1 {
+    position: absolute;
+    right: 4.28vh;
+    top: 0;
+    color: #000;
+    font-size: 5.99vh;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn1 {
+       width: 100%;
+    }
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2.39vh 3.42vh;
+    margin: 1.37vh 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/*********STILE ICONA ACCESSO AMMINISTRATIVO**************/
+.icona_admin{
+  float: right;
+  margin-right: 1em;
+}
