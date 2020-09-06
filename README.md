@@ -3,7 +3,7 @@ An open source Social Network called "Pausa Caffè" (=Coffee break) written in p
 >> For DB connection you need to change the config file located in /include/configDB.ini
 
 <br>
-Check this link for a LIVE DEMO: <a href="http://pausacaffesocial.altervista.org/">Pausa Caffè</a>  It's not possible to register new users for the moment, so you can try one of the following example account: <br>
+Check the link for a LIVE DEMO: <a href="http://pausacaffesocial.altervista.org/" target="_blank">Pausa Caffè</a>  <br>It's not possible to register new users for the moment, so you can try one of the following example account: <br>
 username: utente2 password utente2 / username: utente3 password: utente3 / username: utente4 password: utente4 
 <br> (note: site doesn't fit on mobile, check it on laptop/desktop!) 
 <br>
